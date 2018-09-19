@@ -1,0 +1,11 @@
+@import '_vars';
+
+    body{
+        background-color: $background-color;
+        color: $master-font-color;
+        
+    }
+
+    h1{     
+        color: $master-font-color;
+    }
