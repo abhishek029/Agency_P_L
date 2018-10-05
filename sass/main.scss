@@ -1,6 +1,43 @@
 //import vars and modules
 @import '_vars';
 
+#projectName{
+    color: $projectname;
+    font-weight: bold;
+}
+
+#quickLinks li{
+    padding: 10px 0px 10px 0px;
+    margin: 10px 5px 10px 5px;
+}
+#hanlink{
+    background-color: $hanlink;
+}
+#patellink{
+    background-color: $patellink;
+}
+#worklink{
+    background-color: $worklink;
+}
+#contactlink{
+    background-color: $contactlink;
+}
+#aboutHan{
+    background-color: $about-bgcolor-han;
+    padding: 100px 0px 100px 0px;      //top-right-bottom-left
+}
+
+#aboutPatel{
+    background-color: $about-bgcolor-patel;
+    padding: 100px 0px 100px 0px;      //top-right-bottom-left
+}
+
+#work{
+    background-color: $work-bgcolor;
+}
+#contactus{
+    background-color: $contact-bgcolor;
+}
 footer{
     background-color: $footer-bgcolor;
 }
