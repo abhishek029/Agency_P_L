@@ -4,6 +4,9 @@
     font-family: heading;
     src: url(../fonts/Neou-Bold.ttf);
 }
+.hidden{
+    display: none;
+}
 #projectName{
     color: $projectname;
     font-weight: bold;
@@ -12,8 +15,7 @@
 #main-menu{
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    z-index: 1;
+    
 }
 #menu li a{
     border: 2px solid $white;
@@ -29,7 +31,7 @@
     color: $white;
     font-weight: bold;
 }
-h2{
+h2, h3{
     font-family: heading;
     color: $white;
 }
