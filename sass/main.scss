@@ -1,14 +1,62 @@
 //import vars and modules
 @import '_vars';
-
+@font-face{
+    font-family: heading;
+    src: url(../fonts/Neou-Bold.ttf);
+}
 #projectName{
     color: $projectname;
     font-weight: bold;
 }
 
+#main-menu{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#menu li a{
+    border: 2px solid $white;
+    transition: 0.8s ease-in-out;
+    color: $contactlink;
+    font-weight: bold;
+}
+#menu li a:hover{
+    border: 2px solid $promo-color;
+    transition: 0.8s ease-in-out;
+}
+#quickLinks li a{
+    color: $white;
+    font-weight: bold;
+}
+h2{
+    font-family: heading;
+    color: $white;
+}
+#promoLeft{
+    border-right: 2px solid;
+    text-align: right;
+    font-size: 78pt;
+    color: $promo-color;
+    line-height: 125px;
+    overflow: hidden;
+}
+#promoRight{
+    text-align: left;
+    font-size: 18pt;
+    padding-top: 100px;
+    color: $promo-color;
+}
+
 #quickLinks li{
-    padding: 10px 0px 10px 0px;
-    margin: 10px 5px 10px 5px;
+    padding: 10px 0px 10px 0px;  //top-right-bottom-left
+    margin: 10px 5px 10px 5px; //top-right-bottom-left
+    border: 2px solid $white;
+    transition: 1s ease-in-out;
+}
+#quickLinks li:hover{
+    border: 2px solid $black;
+    transition: 1s ease-in-out;
 }
 #hanlink{
     background-color: $hanlink;
@@ -22,22 +70,70 @@
 #contactlink{
     background-color: $contactlink;
 }
+
 #aboutHan{
     background-color: $about-bgcolor-han;
-    padding: 100px 0px 100px 0px;      //top-right-bottom-left
+    overflow: hidden;
+    padding: 80px 0px 80px 0px;      //top-right-bottom-left
+    // margin: 20px 0px 0px 0px;
 }
 
 #aboutPatel{
     background-color: $about-bgcolor-patel;
-    padding: 100px 0px 100px 0px;      //top-right-bottom-left
+    overflow: hidden;
+    padding: 80px 0px 80px 0px;      //top-right-bottom-left
+    // margin: 20px 0px 0px 0px;
 }
-
+.skills{
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 19px;
+}
 #work{
     background-color: $work-bgcolor;
+    padding: 50px 0px 50px 0px;
 }
+#work p{
+    color: $white;
+}
+#patelswork h2{
+    margin-top: 50px;
+}
+#patelswork img{
+    padding: 40px 10px 50px 0px;       //top-right-bottom-left
+    opacity: 0.5;
+    transition: 0.8s ease-in-out;
+}
+#patelswork img:hover{
+    opacity: 1;
+    transition: 1s ease-in-out;
+} 
 #contactus{
     background-color: $contact-bgcolor;
+    padding: 50px 0px 50px 0px;
 }
-footer{
+#contactus h2 {
+    padding-bottom: 50px;
+    
+}
+footer label{
     background-color: $footer-bgcolor;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 100px 0px 100px 0px;
+}
+textarea{
+    height: 250px;;
+}
+#submit{
+    background-color: $submit-bgcolor;
+    font-weight: bold;
+    font-size: 20px;
+    color: $submit-color;
+    border: 3px solid $submit-bgcolor;
+    transition: 0.8s ease-in-out;
+}
+#submit:hover{
+    transition: 0.8s ease-in-out;
+    border: 3px solid $black;
 }
